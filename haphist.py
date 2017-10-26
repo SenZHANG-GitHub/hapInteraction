@@ -23,8 +23,7 @@ for ichr in range(22):
     subchr = ichr + 1
     blocksfilename = "blocks_info/" + prefix + "_chr" + str(subchr) + ".blocks.det"
     hapfilename = "tmp_files/" + prefix + "_chr" +str(subchr) + "_blocks.trans.phased.haps"
-
-    block_snpnum = []
+ 
     print('reading '+blocksfilename+'\n')
     with open(blocksfilename, mode = 'r') as f:
         f.readline()

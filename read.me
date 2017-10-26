@@ -10,7 +10,10 @@
 	--> haptranspose(prefix, subchr)
 
 (5) Use get_hap_values.py (input:.blocks.det,.trans.phased.haps) to get the haplotype values of each block for each sample (currently only using 0/1 coding for most_common/or_not haplotype)
-	--> gethapval(prefix, subchr)
+	--> gethapval(prefix, subchr): only using 0/1 coding for most common/or_not haplotype
+
+(5.1) Use get_hap_values_thr.py (input: .blocks.det, .trans.phased.haps) to get the hap values of each block for each sample
+    --> gethapval_thr(prefix, subchr, thr): using 0/1 coding (1 for first k haps whose total frequencies > thr)
 
 (6) Use haps_to_BOOST.py to get BOOST format data of haplotypes, with input as hap_values_chri.txt and .phased.sample
 	--> hap2boost(prefix, subchr)
